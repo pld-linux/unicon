@@ -1,0 +1,26 @@
+diff -urN v1/config/unix/Config/top.mak v2/config/unix/Config/top.mak
+--- v1/config/unix/Config/top.mak	Mon Feb 10 08:14:39 2003
++++ v2/config/unix/Config/top.mak	Sun Feb  1 17:22:57 2004
+@@ -117,12 +117,6 @@
+ 		test -d $D/ipl/mincl || mkdir $D/ipl/mincl
+ 		test -d $D/uni || mkdir $D/uni
+ 		test -d $D/uni/lib || mkdir $D/uni/lib
+-		test -d $D/doc || mkdir $D/doc
+-		test -d $D/doc/icon || mkdir $D/doc/icon
+-		test -d $D/doc/unicon || mkdir $D/doc/unicon
+-		test -d $D/man || mkdir $D/man
+-		test -d $D/man/man1 || mkdir $D/man/man1
+-		cp README $D
+ 		cp bin/[a-qs-z]* $D/bin
+ 		rm -f $D/bin/libXpm*
+ 		cp ipl/lib/*.* $D/ipl/lib
+@@ -130,9 +124,6 @@
+ 		cp ipl/gincl/*.* $D/ipl/gincl
+ 		cp ipl/mincl/*.* $D/ipl/mincl
+ 		cp uni/lib/*.* $D/uni/lib
+-		cp doc/icon/*.* $D/doc/icon
+-		cp doc/unicon/*.* $D/doc/unicon
+-		cp doc/icon/icon.1 $D/man/man1
+ 
+ 
+ # Bundle up for binary distribution.
