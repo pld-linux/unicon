@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	x	# don't build X11 version
+#
 Summary:	The Unified Extended Dialect of Icon 
 Summary(pl):	Rozbudowana wersja jêzyka Icon 
 Name:		unicon
@@ -32,10 +36,10 @@ unzip uni.zip
 
 %build
 %ifarch %{ix86}
-%{__make} %{!?_without_x:X-}Configure name=intel_linux
+%{__make} %{?with_x:X-}Configure name=intel_linux
 %endif
 %ifarch alpha
-%{__make} %{!?_without_x:X-}Configure name=alpha_linux
+%{__make} %{?with_x:X-}Configure name=alpha_linux
 %endif
 
 %{__make} Unicon CC="%{__cc}"
