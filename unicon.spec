@@ -17,7 +17,7 @@ Patch0:		%{name}-makefile.patch
 URL:		http://unicon.sourceforge.net/
 BuildRequires:	unzip
 Obsoletes:	icon
-ExclusiveArch:  %{ix86} alpha
+ExclusiveArch:	%{ix86} alpha
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
