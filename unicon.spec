@@ -3,7 +3,7 @@
 %bcond_without	x	# don't build X11 version
 #
 Summary:	The Unified Extended Dialect of Icon 
-Summary(pl):	Rozbudowana wersja jêzyka Icon 
+Summary(pl.UTF-8):   Rozbudowana wersja jÄ™zyka Icon 
 Name:		unicon
 Version:	11
 %define _snap 20030210
@@ -24,8 +24,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Unicon is a very high level, goal-directed, object-oriented, general purpose 
 applications language.
 
-%description -l pl
-Unicon jest objektowym jêzykiem programowania ogólnego zastosowania bardzo 
+%description -l pl.UTF-8
+Unicon jest objektowym jÄ™zykiem programowania ogÃ³lnego zastosowania bardzo 
 wysokiego poziomu.
 
 %prep
