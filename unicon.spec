@@ -3,7 +3,7 @@
 %bcond_without	x	# don't build X11 version
 #
 Summary:	The Unified Extended Dialect of Icon 
-Summary(pl.UTF-8):   Rozbudowana wersja języka Icon 
+Summary(pl.UTF-8):	Rozbudowana wersja języka Icon 
 Name:		unicon
 Version:	11
 %define _snap 20030210
